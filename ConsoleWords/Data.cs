@@ -20,17 +20,6 @@ namespace words
                 new Word(Guid.NewGuid(), "Зелений", "Green", 20, ""),
                 new Word(Guid.NewGuid(), "Червоний", "Red", 0, ""),
                 new Word(Guid.NewGuid(), "Чорний", "Black", 50, ""),
-            };
-
-            var engGroups = new List<Group>()
-            {
-                new Group(Guid.NewGuid(), "Colors", engWords.GetRange(1, 3)),
-            };
-
-            var ukrGroups = new List<Group>()
-            {
-                new Group(Guid.NewGuid(), "Colors", ukrWords.GetRange(1, 3)),
-            };
 
             return new List<Language>()
             {
