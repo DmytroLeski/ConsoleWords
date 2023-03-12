@@ -13,12 +13,14 @@ namespace words.Models
         public List<Word> Words { get; set; }
         public String Description { get; set; }
 
-        public Language(Guid id, string title, List<Word> words, string description)
+        public Language(Guid id, string title, List<Word> words, string description, List<Group> groups)
+
         {
             Id = id;
             Title = title;
             Words = words;
-            Description = description;
+			Description = description;
+            Groups = groups;
         }
 
         public double getAverageLevel()
