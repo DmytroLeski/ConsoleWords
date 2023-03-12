@@ -29,5 +29,9 @@ namespace words.Models
         {
             return $"{Title} : {getAverageLevel()}";
         }
+        public override string Test()
+        {
+            return $"{Title} : {getAverageLevel()}";
+        }
     }
 }
